@@ -1,0 +1,35 @@
+server:
+  port: 9092
+
+# Spring Actuator Configurations
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+#      base-path: /manage
+  endpoint:
+    health:
+      show-details: always
+  cloudfoundry:
+    skip-ssl-validation: true
+spring:
+  application:
+    name: service-a
+
+#Eureka Client Configurations
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+#  instance:
+#    prefer-ip-address: true
+#    health-check-url: http://localhost:9092/manage/health
+#    status-page-url: http://localhost:9092/manage/info
+#    hostname: localhost
+#    non-secure-port: 80
+#    metadata-map:
+#      applicationId: ${vcap.application.application_id}
+#      instanceId: ${vcap.application.instance_index}
+#    lease-renewal-interval-in-seconds: 10
+#    non-secure-port-enabled: true

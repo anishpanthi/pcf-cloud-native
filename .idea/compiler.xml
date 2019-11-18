@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="eureka-server.main" target="11" />
+      <module name="eureka-server.test" target="11" />
+      <module name="service-a.main" target="11" />
+      <module name="service-a.test" target="11" />
+      <module name="service-b.main" target="11" />
+      <module name="service-b.test" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
